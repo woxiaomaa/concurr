@@ -14,12 +14,11 @@ public class Decrementer implements Runnable {
  
         try {
             Thread.sleep(1000);
+            System.out.println(1);
             this.latch.countDown();
  
             Thread.sleep(1000);
-            this.latch.countDown();
- 
-            Thread.sleep(1000);
+            System.out.println(1);
             this.latch.countDown();
         } catch (InterruptedException e) {
             e.printStackTrace();

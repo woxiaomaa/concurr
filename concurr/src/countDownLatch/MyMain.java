@@ -9,9 +9,11 @@ public class MyMain {
 		 
 		Waiter waiter = new Waiter(latch);
 		Decrementer decrementer = new Decrementer(latch);
+		Decrementer2 decrementer2 = new Decrementer2(latch);
 		 
 		new Thread(waiter).start();
 		new Thread(decrementer).start();
+		new Thread(decrementer2).start();
 		 
 		Thread.sleep(4000);
 
